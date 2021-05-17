@@ -5,14 +5,14 @@ import { MapContainer, TileLayer, ZoomControl } from "react-leaflet";
 import { useConfigureLeaflet, useMapServices, useRefEffect } from "hooks";
 import { isDomAvailable } from "lib/util";
 
-const Map = (props) => {
+const Map = () => {
   const {
     children,
     className,
     defaultBaseMap = "OpenStreetMap",
     MapEffect,
     ...rest
-  } = props;
+  } = this.props;
 
   const mapRef = useRef();
 
