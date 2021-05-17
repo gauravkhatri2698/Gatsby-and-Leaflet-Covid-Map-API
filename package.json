@@ -1,5 +1,6 @@
 {
   "name": "gatsby-starter-leaflet",
+  "homepage": "https://github.com/gauravkhatri2698/Gatsby-and-Leaflet-Covid-Map-API.git",
   "title": "Gatsby Starter Leaflet",
   "description": "A Gatsby starter with Leafet!",
   "version": "0.3.0",
@@ -55,6 +56,8 @@
   ],
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "bump": "npm version",
     "clean": "gatsby clean",
@@ -81,7 +84,6 @@
       "yarn lint"
     ]
   },
-  "homepage": "https://gatsby-starter-leaflet.netlify.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/colbyfayock/gatsby-starter-leaflet"
