@@ -23,10 +23,6 @@ const defaultState = {
 const useTracker = ({ api = "all" }) => {
   const [tracker = {}, updateTracker] = useState(defaultState);
 
-  useEffect(() => {
-    updateTracker(tracker);
-  }, [tracker]);
-
   const fetchTracker = React.useCallback(async () => {
     let route = ENDPOINTS.find(({ id } = {}) => id === api);
     let response;
