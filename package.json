@@ -5,8 +5,7 @@
   "version": "0.3.0",
   "author": {
     "name": "Gaurav Khatri",
-    "email": "gauravkhatri2698@gmail.com",
-    "url": "https://twitter.com/colbyfayock"
+    "email": "gauravkhatri2698@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.32.9",
