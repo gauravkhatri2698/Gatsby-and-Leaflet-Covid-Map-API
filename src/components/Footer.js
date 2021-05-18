@@ -7,12 +7,16 @@ import Container from "components/Container";
 const Footer = () => {
   const { authorName } = useSiteMetadata();
 
+  const styling = {
+    color: "white",
+    textDecoration: "underline",
+  };
+
   return (
     <footer>
       <Container>
         <p>
-          &copy; {new Date().getFullYear()},{" "}
-          <p style="color: white;">{authorName}</p>
+          &copy; {new Date().getFullYear()}, <p style={styling}>{authorName}</p>
         </p>
       </Container>
     </footer>
