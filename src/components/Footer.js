@@ -11,7 +11,8 @@ const Footer = () => {
     <footer>
       <Container>
         <p>
-          &copy; {new Date().getFullYear()}, <p>{authorName}</p>
+          &copy; {new Date().getFullYear()},{" "}
+          <p style="color: white;">{authorName}</p>
         </p>
       </Container>
     </footer>
